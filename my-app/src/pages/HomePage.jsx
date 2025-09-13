@@ -1,3 +1,6 @@
+import dog from "../assets/dog.jpg"  
+
+
 const HomePage = () => {
   return (
     <div>
@@ -16,7 +19,7 @@ const HomePage = () => {
               </a>
             </div>
             <div className="hero-image">
-              <img src="/new-hero-image.jpg" alt="Happy golden retriever puppy" />
+              <img src={dog} alt="Happy golden retriever puppy" />
             </div>
           </div>
         </div>
