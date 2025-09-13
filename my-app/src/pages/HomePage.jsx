@@ -14,7 +14,7 @@ const HomePage = () => {
                 Professional and loving care for your furry companions. We offer a range of services designed to keep
                 your pets happy and healthy.
               </p>
-              <a href="/services" className="btn">
+              <a href="/services" className="hero-btn">
                 Explore Our Services
               </a>
             </div>
@@ -43,7 +43,7 @@ const HomePage = () => {
       <section className="py-20" style={{ backgroundColor: "#f8fafc" }}>
         <div className="container">
           <h2 className="text-center mb-8" style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#1e293b" }}>
-            Why PetService Pro?
+            Why Choose PawPal?
           </h2>
           <div className="grid grid-cols-3">
             <div className="feature-card">

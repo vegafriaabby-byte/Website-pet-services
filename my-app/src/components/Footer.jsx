@@ -1,9 +1,13 @@
+import logo from "../assets/logo.png"  
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-logo">logo</div>
+          <div className="footer-logo">
+            <img src={logo} alt="Logo" style={{ width: "100px", height: "100px" }} />
+          </div>
           <div className="footer-links">
             <a href="#quick-links">Quick Links</a>
           </div>
@@ -26,8 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 PetService Pro. All rights reserved.</p>
-          <p>Made with ❤️ Visily</p>
+          <p>&copy; 2025 PawPal. All rights reserved.</p>
         </div>
       </div>
     </footer>

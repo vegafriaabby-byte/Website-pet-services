@@ -73,7 +73,6 @@ const ServicesPage = () => {
                 <img src={service.image || "/placeholder.svg"} alt={service.title} />
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <button className="btn btn-outline">Learn More</button>
               </div>
             ))}
           </div>

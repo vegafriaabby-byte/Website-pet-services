@@ -5,20 +5,14 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 64px;          
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2563eb;
-  text-decoration: none;
+  height: 64px;          
 }
 
 .nav-links {
@@ -29,14 +23,14 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #64748b;
+  color: #c22872;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #2563eb;
+  color: #c22872;
 }
 
 /* Hero Section */
@@ -55,7 +49,7 @@
 .hero-text h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #2563eb;
+  color: #d91373;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -69,6 +63,20 @@
 
 .hero-image {
   text-align: center;
+}
+
+.hero-btn {
+  background-color: #c22872;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #6a0b2e; 
 }
 
 .hero-image img {
@@ -137,7 +145,7 @@
 .feature-icon svg {
   width: 32px;
   height: 32px;
-  color: #2563eb;
+  color: #d91373;
 }
 
 .feature-card h3 {
@@ -186,7 +194,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #d91373;
 }
 
 .form-group textarea {
@@ -212,7 +220,7 @@
 .footer-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2563eb;
+  color: #d91373;
 }
 
 .footer-links {
@@ -227,7 +235,7 @@
 }
 
 .footer-links a:hover {
-  color: #2563eb;
+  color: #d91373;
 }
 
 .social-links {
@@ -241,7 +249,7 @@
 }
 
 .social-links a:hover {
-  color: #2563eb;
+  color: #d91373;
 }
 
 .footer-bottom {

@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
+import logo from "../assets/logo.png"  
+
 
 const Navigation = () => {
   const location = useLocation()
@@ -8,7 +10,7 @@ const Navigation = () => {
       <div className="container">
         <div className="nav-container">
           <Link to="/" className="logo">
-            logo
+            <img src={logo} alt="Logo" style={{ width: "100px", height: "100px" }} />
           </Link>
           <ul className="nav-links">
             <li>
