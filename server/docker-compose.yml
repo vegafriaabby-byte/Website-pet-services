@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: petservice_db
+    environment:
+      POSTGRES_DB: ${DB_NAME:-petservice}
+      POSTGRES_USER: ${DB_USER:-petuser}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-petpass}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-petuser}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: petservice_api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME:-petservice}
+      DB_USER: ${DB_USER:-petuser}
+      DB_PASSWORD: ${DB_PASSWORD:-petpass}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-changeme}
+      PORT: 3001
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+volumes:
+  postgres_data:
