@@ -1,3 +1,21 @@
+import { Link } from "react-router-dom"
+
+const Navigation = () => {
+  return (
+    <header className="site-header">
+      <nav className="nav container">
+        <Link to="/" className="logo">PetService Pro</Link>
+        <ul className="nav-list">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </nav>
+    </header>
+  )
+}
+
+export default Navigation
 import { Link, useLocation } from "react-router-dom"
 import logo from "../assets/logo.png"  
 

@@ -1,3 +1,14 @@
+const Footer = () => {
+  return (
+    <footer className="site-footer">
+      <div className="container">
+        <p>&copy; {new Date().getFullYear()} PetService Pro — Loving care for your pets.</p>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
 import logo from "../assets/logo.png"  
 
 const Footer = () => {

@@ -1,3 +1,27 @@
+const ContactPage = () => {
+  return (
+    <div className="container contact-page">
+      <h1>Contact Us</h1>
+      <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+        <label>
+          Name
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" />
+        </label>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  )
+}
+
+export default ContactPage
 "use client"
 
 import { useState } from "react"

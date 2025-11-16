@@ -1,3 +1,12 @@
+/* Simple app styling for regenerated pages */
+.hero{background:linear-gradient(180deg, #fff 0%, #f8fafc 100%)}
+.hero-content{display:flex;align-items:center;justify-content:space-between}
+.hero-text{max-width:55%}
+.hero-btn{display:inline-block;margin-top:1rem;padding:.6rem 1rem;background:#0ea5a4;color:#fff;border-radius:6px;text-decoration:none}
+.features{padding:2rem 0}
+.services-list{list-style:none;padding:0}
+.services-list li{margin-bottom:1rem}
+.container{padding-top:1rem;padding-bottom:1rem}
 /* Navigation Styles */
 .navigation {
   background-color: #ffffff;

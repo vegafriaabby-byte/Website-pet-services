@@ -1,3 +1,44 @@
+import dog from "../assets/dog.jpg"
+
+const HomePage = () => {
+  return (
+    <div className="home container">
+      <section className="hero">
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>Your Pet's Best Friend</h1>
+            <p>
+              Professional and loving care for your furry companions. We offer a range of
+              services to keep your pets happy and healthy.
+            </p>
+          </div>
+          <div className="hero-image">
+            <img src={dog} alt="Happy dog" />
+          </div>
+        </div>
+      </section>
+
+      <section className="features">
+        <div className="grid">
+          <div className="card">
+            <h3>Pet Sitting</h3>
+            <p>Trusted carers visit your home to feed, play and check on your pets.</p>
+          </div>
+          <div className="card">
+            <h3>Grooming</h3>
+            <p>Full grooming services to keep your pet looking and feeling great.</p>
+          </div>
+          <div className="card">
+            <h3>Walking</h3>
+            <p>Daily walks tailored to your pet's needs and energy level.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default HomePage
 import dog from "../assets/dog.jpg"  
 
 

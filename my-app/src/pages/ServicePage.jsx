@@ -1,3 +1,26 @@
+const ServicePage = () => {
+  return (
+    <div className="container">
+      <h1>Our Services</h1>
+      <ul className="services-list">
+        <li>
+          <h3>Pet Sitting</h3>
+          <p>In-home visits for feeding, play, and care.</p>
+        </li>
+        <li>
+          <h3>Grooming</h3>
+          <p>Bathing, brushing, nail trims, and styling.</p>
+        </li>
+        <li>
+          <h3>Pet Taxi</h3>
+          <p>Reliable transport to vets or grooming appointments.</p>
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+export default ServicePage
 import groom from "../assets/groom.jpg"  
 import petsitting from "../assets/petsitting.jpg"  
 import petwalk from "../assets/petwalk.jpg"  
